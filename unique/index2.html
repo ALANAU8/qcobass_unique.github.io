@@ -1,0 +1,223 @@
+ <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        
+      
+        
+        <title>UNIQUE</title>
+    </head>
+
+
+    <body>
+
+      <MARQUEE ALIGN=TOP BGCOLOR=#CCCCFF HEIGHT=40 WIDTH=100%>歡迎你來到這個網站^ ^我們是第二十一屆學生會幹事會UNIQUE</MARQUEE><P>
+      <header>
+        <div class='container'>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">
+                  <img src='PICTURES/unique.jpeg'>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">主頁 </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="PICTURES/platform/platform.html">政綱</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="PICTURES/OUR MEMBER/our_member.html">成員</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">最新消息</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="二手物品買賣/二手物品買賣">二手物品買賣</a>
+                    
+                  </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </div>
+              </nav>
+          </div>
+       </header>
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <title>Dates Object(5)</title>
+
+<script>
+
+function ShowDate()
+{
+  var d = new Date();
+
+  var yy = d.getFullYear();
+　var mm = d.getMonth();
+　var dd = d.getDate();　
+
+  var h = d.getHours();
+　var m = d.getMinutes();
+　var s = d.getSeconds();　
+
+  var days = ["日","一","二","三","四","五","六"];
+
+　document.getElementById("showbox1").innerHTML = d;
+　document.getElementById("showbox2").innerHTML = yy + "年" + mm + "月" + dd + "日 星期" + days[d.getDay()];
+document.getElementById("showbox3").innerHTML = h+'時'+m+'分'+s+'秒';
+  
+　setTimeout("ShowDate()",1000);
+
+
+}
+</script>
+<div class='container'>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand"></a> 
+<img src="PICTURES/timthumb.jfif">
+      </div>
+</head>
+
+<body onload="ShowDate()">
+
+  現在的日期和時間<br>
+<p id="showbox1"></p>
+<p id="showbox2"></p>
+<p id="showbox3"></p>
+<p id="showbox4"></p>
+
+    <section id='intro'>
+            <div class='jumbotron'>
+                <div class='container'>
+                  <div class='row'>
+                        <div class="col-md-12">
+                        <h1>UNIQUE</h1>
+                        <p class='sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI'> We are Unique, satisfy what you need.</p>
+                        <a class='btn' href="PICTURES/photo/photo.html" >photo</a>
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                        <meta charset="utf-8">
+                        <title>UNIQUE</title>
+                        <script>
+                        
+                        var img = new Image();
+                        
+                        // User Variables - customize these to change the image being scrolled, its
+                        // direction, and the speed.
+                        
+                        img.src = 'PICTURES/uniquemember.jpg';
+                        var CanvasXSize = 1200 ;
+                        var CanvasYSize = 1200;
+                        var speed = 30; //lower is faster
+                        var scale = 1;
+                        var y = -2; //vertical offset
+                        
+                        // Main program
+                        
+                        var dx = 0.75;
+                        var imgW;
+                        var imgH;
+                        var x = 0;
+                        var clearX;
+                        var clearY;
+                        var ctx;
+                        
+                        img.onload = function() {
+                            imgW = img.width*scale;
+                            imgH = img.height*scale;
+                            if (imgW > CanvasXSize) { x = CanvasXSize-imgW; } // image larger than canvas
+                            if (imgW > CanvasXSize) { clearX = imgW; } // image larger than canvas
+                            else { clearX = CanvasXSize; }
+                            if (imgH > CanvasYSize) { clearY = imgH; } // image larger than canvas
+                            else { clearY = CanvasYSize; }
+                            //Get Canvas Element
+                            ctx = document.getElementById('canvas').getContext('2d');
+                            //Set Refresh Rate
+                            return setInterval(draw, speed);
+                        }
+                        
+                        function draw() {
+                            //Clear Canvas
+                            ctx.clearRect(0,0,clearX,clearY);
+                            //If image is <= Canvas Size
+                            if (imgW <= CanvasXSize) {
+                                //reset, start from beginning
+                                if (x > (CanvasXSize)) { x = 0; }
+                                //draw aditional image
+                                if (x > (CanvasXSize-imgW)) { ctx.drawImage(img,x-CanvasXSize+1,y,imgW,imgH); }
+                            }
+                            //If image is > Canvas Size
+                            else {
+                                //reset, start from beginning
+                                if (x > (CanvasXSize)) { x = CanvasXSize-imgW; }
+                                //draw aditional image
+                                if (x > (CanvasXSize-imgW)) { ctx.drawImage(img,x-imgW+1,y,imgW,imgH); }
+                            }
+                            //draw image
+                            ctx.drawImage(img,x,y,imgW,imgH);
+                            //amount to move
+                            x += dx;
+                        }
+                        
+                        </script>
+                        </head>
+                        
+                        <body onload="draw();">
+                        
+                        <hr>
+                        <canvas id="canvas" width="800" height="350">
+                           
+                        </canvas>
+                        </body>
+
+                        
+                    </div>
+                 </div>
+                </div>
+             </div>
+
+             </div>
+    </section>
+
+    <section id='second'>
+      <div class='container'>
+          <div class='row'>
+              <div class='col-md-8 offset-md-2 text-center'>
+                <h3>我們的理念</h3>
+              <div class='row'>
+                 <div class='col-md-4'>
+                    <img src='PICTURES/unique.jpeg'>
+                    <h5>UNIQUE</h5>
+                 </div>
+                <div class='col-md-8 text-left'>
+                <p class='lead'>薪火相傳</p>
+                <p>承接以往學生會為學生提供服務的概念，爭取更多福利，加強學校方溝通，增加同學對學校的歸屬感。為我校學生留下美好的校園生活的回憶。面對批評，勇於接受並加以改良。</p>
+               </div>
+               </div>
+              </div>
+           </div>
+      </div>
+        
+        </section>
+       
+  </body>
+
+
+
+
+ </html>
+
